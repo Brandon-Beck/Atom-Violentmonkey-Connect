@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "violentmonkey-connect:toggle"
+    "ctrl-shift-j": "violentmonkey-connect:toggle"
   }
 }

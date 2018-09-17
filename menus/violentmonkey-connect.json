@@ -15,10 +15,6 @@
           "label": "violentmonkey-connect",
           "submenu": [
             {
-              "label": "Enable Autocompile",
-              "command": "violentmonkey-connect:toggle"
-            },
-            {
               "label": "Generate Config File",
               "command": "violentmonkey-connect:generateConfig"
             }

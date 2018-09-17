@@ -5,17 +5,12 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": [
-      "violentmonkey-connect:toggle",
-      "violentmonkey-connect:generateConfig"
-    ]
-  },
   "repository": "https://github.com/atom/violentmonkey-connect",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-live-server": ">=2.3.0"
   }
 }
