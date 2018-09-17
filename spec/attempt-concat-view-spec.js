@@ -1,8 +1,8 @@
 'use babel';
 
-import AttemptConcatView from '../lib/attempt-concat-view';
+import ViolentmonkeyConnectView from '../lib/violentmonkey-connect-view';
 
-describe('AttemptConcatView', () => {
+describe('ViolentmonkeyConnectView', () => {
   it('has one valid test', () => {
     expect('life').toBe('easy');
   });

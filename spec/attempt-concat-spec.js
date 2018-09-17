@@ -1,44 +1,44 @@
 'use babel';
 
-import AttemptConcat from '../lib/attempt-concat';
+import ViolentmonkeyConnect from '../lib/violentmonkey-connect';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('AttemptConcat', () => {
+describe('ViolentmonkeyConnect', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('attempt-concat');
+    activationPromise = atom.packages.activatePackage('violentmonkey-connect');
   });
 
-  describe('when the attempt-concat:toggle event is triggered', () => {
+  describe('when the violentmonkey-connect:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.attempt-concat')).not.toExist();
+      expect(workspaceElement.querySelector('.violentmonkey-connect')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'attempt-concat:toggle');
+      atom.commands.dispatch(workspaceElement, 'violentmonkey-connect:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.attempt-concat')).toExist();
+        expect(workspaceElement.querySelector('.violentmonkey-connect')).toExist();
 
-        let attemptConcatElement = workspaceElement.querySelector('.attempt-concat');
-        expect(attemptConcatElement).toExist();
+        let ViolentmonkeyConnectElement = workspaceElement.querySelector('.violentmonkey-connect');
+        expect(ViolentmonkeyConnectElement).toExist();
 
-        let attemptConcatPanel = atom.workspace.panelForItem(attemptConcatElement);
-        expect(attemptConcatPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'attempt-concat:toggle');
-        expect(attemptConcatPanel.isVisible()).toBe(false);
+        let ViolentmonkeyConnectPanel = atom.workspace.panelForItem(ViolentmonkeyConnectElement);
+        expect(ViolentmonkeyConnectPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'violentmonkey-connect:toggle');
+        expect(ViolentmonkeyConnectPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('AttemptConcat', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.attempt-concat')).not.toExist();
+      expect(workspaceElement.querySelector('.violentmonkey-connect')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'attempt-concat:toggle');
+      atom.commands.dispatch(workspaceElement, 'violentmonkey-connect:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('AttemptConcat', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let attemptConcatElement = workspaceElement.querySelector('.attempt-concat');
-        expect(attemptConcatElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'attempt-concat:toggle');
-        expect(attemptConcatElement).not.toBeVisible();
+        let ViolentmonkeyConnectElement = workspaceElement.querySelector('.violentmonkey-connect');
+        expect(ViolentmonkeyConnectElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'violentmonkey-connect:toggle');
+        expect(ViolentmonkeyConnectElement).not.toBeVisible();
       });
     });
   });

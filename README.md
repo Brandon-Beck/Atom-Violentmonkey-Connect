@@ -1,4 +1,4 @@
-# attempt-concat package
+# violentmonkey-connect package
 
 Syncronize your scripts to ViolentMonkey!
 Can be configured to replace \@require libraries with local versions.

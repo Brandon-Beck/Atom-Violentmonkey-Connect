@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle attempt-concat",
-        "command": "attempt-concat:toggle"
+        "label": "Toggle violentmonkey-connect",
+        "command": "violentmonkey-connect:toggle"
       }
     ]
   },
@@ -12,15 +12,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "attempt-concat",
+          "label": "violentmonkey-connect",
           "submenu": [
             {
               "label": "Enable Autocompile",
-              "command": "attempt-concat:toggle"
+              "command": "violentmonkey-connect:toggle"
             },
             {
               "label": "Generate Config File",
-              "command": "attempt-concat:generateConfig"
+              "command": "violentmonkey-connect:generateConfig"
             }
           ]
         }

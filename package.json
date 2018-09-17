@@ -1,17 +1,17 @@
 {
-  "name": "attempt-concat",
-  "main": "./lib/attempt-concat",
+  "name": "violentmonkey-connect",
+  "main": "./lib/violentmonkey-connect",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": [
-      "attempt-concat:toggle",
-      "attempt-concat:generateConfig"
+      "violentmonkey-connect:toggle",
+      "violentmonkey-connect:generateConfig"
     ]
   },
-  "repository": "https://github.com/atom/attempt-concat",
+  "repository": "https://github.com/atom/violentmonkey-connect",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
