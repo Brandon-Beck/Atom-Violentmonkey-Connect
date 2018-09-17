@@ -1,0 +1,21 @@
+{
+  "name": "attempt-concat",
+  "main": "./lib/attempt-concat",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "attempt-concat:toggle",
+      "attempt-concat:generateConfig"
+    ]
+  },
+  "repository": "https://github.com/atom/attempt-concat",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

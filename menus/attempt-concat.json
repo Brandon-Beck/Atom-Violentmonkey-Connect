@@ -1,0 +1,30 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle attempt-concat",
+        "command": "attempt-concat:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "attempt-concat",
+          "submenu": [
+            {
+              "label": "Enable Autocompile",
+              "command": "attempt-concat:toggle"
+            },
+            {
+              "label": "Generate Config File",
+              "command": "attempt-concat:generateConfig"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
