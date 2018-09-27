@@ -6,7 +6,8 @@
 // @grant    unsafeWindow
 // @grant    GM.setClipboard
 // @grant    GM_setClipboard
-// @require  https://greasyfork.org/scripts/999999-common-library/code/Common%20Library.js
+// @require  common.js
+// @require  https://cdn.rawgit.com/Username/Project/a629aac255ad04fdea2593060da69edfa02ed6b5/gitlib.js
 // @match    https://mangadex.org/*
 // ==/UserScript==
 let s = 5;
